@@ -1,0 +1,110 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+  background-color: #e5f9f0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0fcf7;
+}
+
+#app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header h1 {
+  margin-bottom: 0.25rem;
+  color: #3c7d56;
+  font-weight: 600;
+}
+
+header p {
+  margin-top: 0;
+  color: #6b9c7f;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #c1e6d3;
+  border-radius: 0.5rem;
+  color: #333;
+}
+
+form input:focus {
+  border-color: #7bc9aa;
+  box-shadow: 0 0 5px rgba(88, 167, 142, 0.25);
+  outline: none;
+}
+
+form button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #58a78e 0%, #4f9e7e 100%);
+  box-shadow: 0 3px 8px rgba(88, 167, 142, 0.25);
+}
+
+form button:hover {
+  background-color: #4f9e7e;
+}
+
+.status {
+  min-height: 1.5rem;
+  color: #6b9c7f;
+}
+
+.results {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+
+.artist-card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.artist-thumb {
+  width: 100%;
+  border-radius: 0.75rem;
+  object-fit: cover;
+  max-height: 180px;
+}
+
+
+.artist-meta {
+  font-size: 0.9rem;
+  color: #6b9c7f;
+  border-top: 1px solid #e6f4ee;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.artist-bio {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #3c7d56;
+}
