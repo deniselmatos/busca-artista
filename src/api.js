@@ -29,5 +29,6 @@ export async function searchArtists(artistName) {
     genre: artist.strGenre,
     bioPT: artist.strBiographyPT,
     bioEN: artist.strBiographyEN,
+    country: artist.strCountry,
   }));
 }
