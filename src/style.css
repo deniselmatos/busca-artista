@@ -108,3 +108,40 @@ form button:hover {
   line-height: 1.4;
   color: #3c7d56;
 }
+
+body.night-mode {
+  background-color: #121212;
+  color: #e5e5e5;
+}
+
+body.night-mode header h1 {
+  color: #e5e5e5;
+}
+
+body.night-mode header p {
+  color: #ccc;
+}
+
+body.night-mode form input,
+body.night-mode form button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.night-mode .artist-card {
+  background: #333;
+  color: #e5e5e5;
+}
+
+body.night-mode .artist-card .artist-meta {
+  color: #ccc;
+}
+
+body.night-mode .artist-card .artist-bio {
+  color: #ddd;
+}
+
+body.night-mode .artist-thumb {
+  filter: brightness(0.6);
+}
