@@ -67,6 +67,15 @@ export function renderArtists(artists) {
     card.appendChild(name);
     card.appendChild(meta);
     card.appendChild(bio);
+    const links = document.createElement("div");
+    
+links.classList.add("artist-links");
+
+if (artist.country) {
+  links.innerHTML += `<p><strong>País:</strong> ${artist.country}</p>`;
+}
+
+card.appendChild(links);
 
     resultsContainer.appendChild(card);
   });
